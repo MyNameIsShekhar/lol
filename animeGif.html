@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #myGif {
+            display: none;
+        }
+        #openButton {
+            padding: 10px 20px;
+            background: linear-gradient(to right, #ff105f, #ffad06);
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+        #openButton:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    </style>
+</head>
+<body>
+
+<button id="openButton">Open</button>
+
+<img id="myGif" src="YOUR_GIF_LINK_HERE" alt="Anime Gif">
+
+<script>
+    document.getElementById("openButton").onclick = function() {
+        document.getElementById("myGif").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
